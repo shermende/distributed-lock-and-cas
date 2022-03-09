@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mps-processing
+data:
+  application.properties: |-
+    spring.datasource.url=jdbc:postgresql://keycloak-postgres:5432/keycloak
+    spring.datasource.username=keycloak
+    spring.datasource.password=keycloak
+    spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://192.168.49.2:30800/auth/realms/master/protocol/openid-connect/certs

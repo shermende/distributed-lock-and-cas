@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: mps-processing
+  zipkin:
+    enabled: false
+  cloud:
+    kubernetes:
+      config:
+        enabled: false
+      discovery:
+        enabled: false
